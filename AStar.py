@@ -84,7 +84,7 @@ def calculateWeight(point1,point2,matrix):
     return val
 # reconstruct algorithm path 
 def reconstructPath(cameFrom,stop):
-    counter = 0
+    
     path=[]
     node = cameFrom[stop]
     path.append(stop+1)
@@ -128,7 +128,6 @@ def astar(graph,start,stop,matrix):
         considered.remove(currentNode)
        
         neighbours =[]
-        weight = []
         counter = 0
         # find neighbours of lowest cost element
         for point in matrix[currentNode]:
